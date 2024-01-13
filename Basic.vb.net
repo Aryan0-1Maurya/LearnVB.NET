@@ -1,0 +1,145 @@
+Module ProgrammingHub
+    Sub Main()
+        Dim i As String
+        Console.Write("Enter a String : ")
+        i = Console.ReadLine()
+        Console.ReadKey()
+    End Sub
+End Module
+
+
+
+
+Module ProgrammingHub
+    Sub Main()
+        Dim i As Integer
+        Console.Write("Enter an Integer : ")
+        i = Integer.Parse(Console.ReadLine())
+        Console.ReadKey()
+    End Sub
+End Module
+
+
+
+
+
+Module Module1
+    Sub Main()
+        Console.WriteLine("Simple vb.net program")
+        Console.ReadKey()
+    End Sub
+End Module
+
+
+
+Module Module1
+
+    Class Widget
+        Public Shared Function Test() As Integer
+            ' Cannot access regular fields.
+            Return Integer.Parse("56")
+        End Function
+
+        Dim _value As String = "23"
+
+        Public Function TestB() As Integer
+            ' Can access regular fields.
+            Return Integer.Parse(_value)
+        End Function
+    End Class
+
+    Sub Main()
+        Console.WriteLine("Use Shared Function")
+        Console.WriteLine(Widget.Test())
+
+        Console.WriteLine("Without Shared Function")
+        Dim w As Widget = New Widget()
+        Console.WriteLine(w.TestB())
+
+        Console.Read()
+    End Sub
+
+End Module
+Module Module1
+    Sub Main()
+        Console.WriteLine("Simple vb.net program")
+        Console.ReadKey()
+    End Sub
+End Module
+
+
+
+
+Module ProgrammingHub
+
+    Dim num As Integer
+    Sub Main()
+
+        Console.Write("Enter a Number : ")
+        num = Console.ReadLine()
+
+        If num > 0 Then
+            Console.WriteLine("POSITIVE")
+        ElseIf num < 0 Then
+            Console.WriteLine("NEGATIVE")
+        ElseIf num = 0 Then
+            Console.WriteLine("ZERO")
+        End If
+
+        'This line is to hold the output screen
+        Console.Read()
+
+    End Sub
+
+End Module
+
+
+
+
+
+Module ProgrammingHub
+
+    Dim alphabet, c As Char
+    Sub Main()
+        Console.Write("Enter a Alphabet : ")
+        alphabet = Console.ReadLine()
+
+        c = alphabet.ToString.ToUpper
+
+        If c = "A" Or c = "E" Or c = "I" Or c = "O" Or c = "U" Then
+            Console.WriteLine("{0} is vowel", alphabet)
+        Else
+            Console.WriteLine("{0} is not vowel", alphabet)
+        End If
+
+        'This line is to hold the output screen
+        Console.Read()
+
+    End Sub
+
+End Module
+
+
+
+
+
+
+Module ProgrammingHub
+
+    Dim num1, num2, add As Integer
+    Sub Main()
+
+        Console.Write("Enter 1st number : ")
+        num1 = Convert.ToInt32(Console.ReadLine())
+        Console.Write("Enter 2nd number : ")
+        num2 = Convert.ToInt32(Console.ReadLine())
+
+        add = num1 + num2
+        Console.WriteLine("{0} + {1} = {2}", num1, num2, add)
+
+        'This line is to hold the output screen
+        Console.Read()
+
+    End Sub
+
+End Module
